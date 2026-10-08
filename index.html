@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="./css/main.css" rel="stylesheet"/>
+<link href="./css/setting.css" rel="stylesheet"/>
+<title data-i18n="page-title">Home</title>
+</head>
+<body class="bg-[#171818]">
+<main class="wraper">
+<!-- top header ithems -->
+<header class="top_header relative">
+<nav class="nav_header reveal from-top">
+<div class="header_logo">
+<img alt="" src="./img/header/AMINCO.png"/>
+</div>
+<ul class="ul_header">
+<li><a data-i18n="con-us" href="#"></a></li>
+<li><a data-i18n="news" href="#"></a></li>
+<li class="relative" id="dropdown-parent">
+<a aria-controls="dropdown-menu" aria-expanded="false" class="flex items-center gap-2 desktop_dropdown_trigger" href="#" id="dropdown-btn">
+<span data-i18n="products"></span>
+<svg class="w-3 h-3 transition-transform duration-300" fill="none" id="dropdown-arrow" viewbox="0 0 12 12">
+<path d="M2 4L6 8L10 4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</a>
+<ul class="drop_ul" id="dropdown-menu">
+<li><a class="drop_li" data-i18n="kitchen-equipment" href="#"></a></li>
+<li><a class="drop_li" data-i18n="restaurant-equipment" href="#"></a></li>
+<li><a class="drop_li" data-i18n="installation-services" href="#"></a></li>
+<li><a class="drop_li" data-i18n="free-consultation" href="#"></a></li>
+</ul>
+</li>
+<li>
+<button class="lang-btn" id="langBtn" onclick="toggleLang()">
+<div class="lang-track"></div>
+<span class="lang-option active" id="enOpt">EN</span>
+<span class="lang-option inactive" id="faOpt">FA</span>
+</button>
+</li>
+</ul>
+</nav>
+<div class="header_small_baners reveal from-left">
+<div class="small_baner_top" data-tilt="">
+<div class="smal_baner_txts">
+<div class="aroow">
+<div class="curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+</div>
+<div class="small_baner_txt_wraper">
+<div class="smal_baber_light_txt">
+<p data-i18n="economic-package"> پکیج اقتصادی</p>
+</div>
+<div class="smal_baber_bold_txt">
+<p data-i18n="restaurant-launch"> راه اندازی رستوران</p>
+</div>
+</div>
+</div>
+<div class="small_baner_img_wraper">
+<img alt="" src="./img/header/item_img/file_00000000e268720a840863324aa5bf15 1.png"/>
+</div>
+</div>
+<div class="small_baner_bottom" data-tilt="">
+<div class="smal_baner_txts_bottom">
+<div class="aroow">
+<div class="curcle_bottom">
+<img alt="" src="./img/header/whiteArrow.png"/>
+</div>
+</div>
+<div class="small_baner_txt_wraper">
+<div class="smal_baber_light_txt_bottom">
+<p data-i18n="economic-package"> پکیج اقتصادی</p>
+</div>
+<div class="smal_baber_bold_txt_bottom">
+<p data-i18n="restaurant-launch"> راه اندازی رستوران</p>
+</div>
+</div>
+</div>
+<div class="small_baner_img_wraper">
+<img alt="" src="./img/header/item_img/file_00000000e268720a840863324aa5bf15 1.png"/>
+</div>
+</div>
+</div>
+<div class="w-[72%] h-full reveal from-right">
+<div class="header_rounded_baner" data-tilt="" data-tilt-strength="3">
+<div class="rounded_img">
+<img alt="" src="./img/header/item_img/file_00000000e268720a840863324aa5bf15 1.png"/>
+</div>
+<div class="rounded_txt">
+<div class="rounded_light_txt">
+<p data-i18n="desigin"></p>
+</div>
+<div class="rounded_bold_txt">
+<p data-i18n="industrial-equipment">تجهیزات آشپزخانه های صنعتی</p>
+</div>
+<div class="rounded_dec">
+<p data-i18n="short-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+</div>
+<div class="header_btn_wraper">
+<a class="header_btn reveal from-right">
+<div class="counsel_curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+<div class="counsel_link_txt">
+<p data-i18n="view-services">مشاهده خدمات</p>
+</div>
+</a>
+</div>
+</div>
+<div class="statistics">
+<div class="statistics_box">
+<span data-target="4000">0</span>
+<p class="statistics_dec" data-i18n="default-stat">آمار پیش فزض</p>
+</div>
+<div class="line"></div>
+<div class="statistics_box">
+<span data-target="34500">0</span>
+<p class="statistics_dec" data-i18n="default-stat">آمار پیش فزض</p>
+</div>
+<div class="line"></div>
+<div class="statistics_box">
+<span data-target="100">0</span>
+<p class="statistics_dec" data-i18n="default-stat">آمار پیش فزض</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- end top header ithems -->
+<header class="mobile_header">
+<div class="mobile_menu_wraper reveal from-top">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="باز کردن منو" class="burger_btn_wraper" data-i18n-aria-label="open-menu" id="burger-btn" type="button">
+<span class="burger-line"></span>
+<span class="burger-line"></span>
+<span class="burger-line"></span>
+</button>
+<div aria-hidden="true" class="mobile_menu" id="mobile-menu">
+<div aria-label="منوی اصلی" aria-modal="true" class="mobile_menu_panel" data-i18n-aria-label="main-menu" role="dialog">
+<div class="mobile_menu_head">
+<div class="mobile_menu_brand">
+<img alt="AminCo" class="mobile_menu_logo" src="./img/header/AMINCO.png"/>
+<span class="mobile_menu_caption" data-i18n="main-menu">منوی اصلی</span>
+</div>
+<button aria-label="بستن منو" class="mobile_menu_close" data-i18n-aria-label="close-menu" id="mobile-menu-close" type="button">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M6 6L18 18M18 6L6 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+<ul class="mobile_ul">
+<li><a class="mobile_li" href="#"><span data-i18n="con-us"></span><span class="mobile_nav_arrow">←</span></a></li>
+<li><a class="mobile_li" href="#"><span data-i18n="news"></span><span class="mobile_nav_arrow">←</span></a></li>
+<li class="mobile_dropdown_item">
+<button aria-controls="mobile-dropdown" aria-expanded="false" class="mobile_dropdown_btn" id="mobile-dropdown-btn" type="button">
+<span data-i18n="products"></span>
+<svg class="mobile_dropdown_arrow" fill="none" id="mobile-arrow" viewbox="0 0 12 12">
+<path d="M2 4L6 8L10 4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</button>
+<ul class="mobile_drop_ul" id="mobile-dropdown">
+<li><a class="mobile_drop_li" data-i18n="kitchen-equipment" href="#"></a></li>
+<li><a class="mobile_drop_li" data-i18n="restaurant-equipment" href="#"></a></li>
+<li><a class="mobile_drop_li" data-i18n="installation-services" href="#"></a></li>
+<li><a class="mobile_drop_li" data-i18n="free-consultation" href="#"></a></li>
+</ul>
+</li>
+</ul>
+<div class="mobile_menu_footer">
+<span>AMINCO</span>
+<span data-i18n="industrial-kitchen-equipment">تجهیزات آشپزخانه صنعتی</span>
+</div>
+</div>
+</div>
+<button class="lang-btn z-50" id="langBtn_mobile" onclick="toggleLang()">
+<div class="lang-track"></div>
+<span class="lang-option active" id="enOpt_mobile">EN</span>
+<span class="lang-option inactive" id="faOpt_mobile">FA</span>
+</button>
+</div>
+<div class="mobile_rounded_baner reveal from-left">
+<div class="mobile_rounded_baner_txt_wraper">
+<div class="mobile_rounded_baner_txt_light">
+<p data-i18n="desigin"></p>
+</div>
+<div class="mobile_rounded_baner_txt_bold">
+<p data-i18n="Industrial"></p>
+</div>
+</div>
+<div class="mobile_rounded_img_wraper">
+<div class="mobile_rounded_section">
+<div class="mobile_rounded_btn">
+<div class="counsel_curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+<div class="counsel_link_txt">
+<p data-i18n="view-services">مشاهده خدمات</p>
+</div>
+</div>
+<div class="nums">
+<div class="statistics">
+<div class="statistics_box">
+<span data-target="4000">0</span>
+<p class="statistics_dec" data-i18n="default-stat">آمار پیش فزض</p>
+</div>
+<div class="line"></div>
+<div class="statistics_box">
+<span data-target="34500">0</span>
+<p class="statistics_dec" data-i18n="default-stat">آمار پیش فزض</p>
+</div>
+<div class="line"></div>
+<div class="statistics_box">
+<span data-target="100">0</span>
+<p class="statistics_dec" data-i18n="default-stat">آمار پیش فزض</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile_rounded_section">
+<img alt="" class="w-full h-full object-scale-down" src="./img/header/item_img/file_00000000e268720a840863324aa5bf15 1.png"/>
+</div>
+</div>
+</div>
+<div class="mobile_small_section_wraper">
+<div class="mobile_small_baner_l reveal from-left">
+<img alt="" class="w-full h-full object-scale-down" src="./img/header/item_img/file_00000000e268720a840863324aa5bf15 1.png"/>
+<div class="smal_baner_mobile_txt_wraper">
+<div class="counsel_curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+<div class="small_baner_txt_wraper">
+<div class="smal_baber_light_txt">
+<p data-i18n="economic-package"> پکیج اقتصادی</p>
+</div>
+<div class="smal_baber_bold_txt">
+<p data-i18n="restaurant-launch"> راه اندازی رستوران</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile_small_baner_r reveal from-right">
+<img alt="" class="w-full h-full object-scale-down" src="./img/header/item_img/file_00000000e268720a840863324aa5bf15 1.png"/>
+<div class="smal_baner_mobile_txt_wraper">
+<div class="counsel_curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+<div class="small_baner_txt_wraper">
+<div class="smal_baber_light_txt">
+<p data-i18n="economic-package"> پکیج اقتصادی</p>
+</div>
+<div class="smal_baber_bold_txt">
+<p data-i18n="restaurant-launch"> راه اندازی رستوران</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- slider -->
+<section class="sliders_wraper">
+<div class="slider_l reveal from-left">
+<div class="slider_link">
+<div class="svg_link">
+<div class="curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+</div>
+<div class="txt_link">
+<p data-i18n="more-information">مشاهده اطلاعات بیشتر</p>
+</div>
+</div>
+<img alt="" class="slider_img_l" src="./img/slider/be401fe22be8e7c8de1fd25af44a40083a5fd4db.jpg"/>
+<div class="slider_r_txt">
+<p data-i18n="economic-restaurant-package">پکیج اقتصادی راه اندازی رستوران</p>
+</div>
+</div>
+<div class="slider_r reveal from-right">
+<div class="slider_link">
+<div class="svg_link">
+<div class="curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+</div>
+<div class="txt_link">
+<p data-i18n="more-information">مشاهده اطلاعات بیشتر</p>
+</div>
+</div>
+<div class="slider_img_wraper">
+<img alt="" class="slider_img_r" src="./img/slider/373bf71029f1da36a550ede13341184ecb1efb8b.png"/>
+<img alt="" class="slider_img_r" src="./img/slider/76a498113b01496ae01e2d24bb8b4099f4e58b35.png"/>
+<img alt="" class="slider_img_r" src="./img/slider/868db20882489476420c0a166f66863e90bb3c96.jpg"/>
+<img alt="" class="slider_img_r" src="./img/slider/be401fe22be8e7c8de1fd25af44a40083a5fd4db.jpg"/>
+</div>
+</div>
+</section>
+<!-- end slider -->
+<!-- services -->
+<section class="services">
+<div class="service_title">
+<h1 class="service_title_txt reveal from-left" data-i18n="services-title">!مجموعه خدماتی که ما ارائه میدهیم</h1>
+<p class="service_dec reveal from-right" data-i18n="services-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،نچنان که </p>
+</div>
+<div class="service_box_wraper">
+<div class="service_box group reveal from-top">
+<div class="hover_service_box"></div>
+<div class="box_title">
+<h3 data-i18n="installation-setup"> نصب و راه اندازی</h3>
+</div>
+<div class="box_txt no-scrollbar">
+<p data-i18n="after-sales-description">  خدمات پس از فروش بخش مهمی از تمام خدمات است. این مجموعه به خوبی از نیازهای پس از فروش مشتریان خود آگاه است.</p>
+</div>
+</div>
+<div class="service_box group reveal from-top">
+<div class="hover_service_box"></div>
+<div class="box_title">
+<h3 data-i18n="installation-setup"> نصب و راه اندازی</h3>
+</div>
+<div class="box_txt no-scrollbar">
+<p data-i18n="after-sales-description">  خدمات پس از فروش بخش مهمی از تمام خدمات است. این مجموعه به خوبی از نیازهای پس از فروش مشتریان خود آگاه است.</p>
+</div>
+</div>
+<div class="service_box group reveal from-top">
+<div class="hover_service_box"></div>
+<div class="box_title">
+<h3 data-i18n="installation-setup"> نصب و راه اندازی</h3>
+</div>
+<div class="box_txt no-scrollbar">
+<p data-i18n="after-sales-description">  خدمات پس از فروش بخش مهمی از تمام خدمات است. این مجموعه به خوبی از نیازهای پس از فروش مشتریان خود آگاه است.</p>
+</div>
+</div>
+<div class="service_box group reveal from-top">
+<div class="hover_service_box"></div>
+<div class="box_title">
+<h3 data-i18n="installation-setup"> نصب و راه اندازی</h3>
+</div>
+<div class="box_txt no-scrollbar">
+<p data-i18n="after-sales-description">  خدمات پس از فروش بخش مهمی از تمام خدمات است. این مجموعه به خوبی از نیازهای پس از فروش مشتریان خود آگاه است.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- end services -->
+<!-- swiper -->
+<section class="swiper_wraper reveal from-bottom">
+<div class="swiper_txt_wraper reveal from-right">
+<div class="swiper_link_wraper">
+<a class="swiper_link reveal from-right" href="#">
+<img alt="" class="w-5 h-3.5" src="./img/news/svgs/Vector 2343.png"/>
+<p data-i18n="view-all">مشاهده همه</p>
+</a>
+</div>
+<div class="swiper_txt">
+<div class="swiper_txt_bold">
+<p data-i18n="latest-projects">آخرین پـــــروژه های شرکت </p>
+</div>
+<div class="swiper_txt_light">
+<p data-i18n="latest-projects-description">در این بخش آخرین پروژه های امیـــــــــن کو را ببینید</p>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="carousel-section">
+<div class="carousel-wrap" id="carousel">
+<div class="carousel-track" id="track">
+<div class="card" data-index="0">
+<img alt="پروژه ۱" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="marinator-manufacturer"></span><br/><span data-i18n="vacuum-65l"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg>
+</a>
+</div>
+</div>
+<div class="card" data-index="1">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="card" data-index="2">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="card" data-index="3">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="card" data-index="4">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="card" data-index="5">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="card" data-index="6">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="card" data-index="7">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="card" data-index="8">
+<img alt="پروژه ۲" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="card-caption">
+<h3><span data-i18n="industrial-kitchen-design"></span><br/><span data-i18n="luxury-restaurant"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="desktop-nav">
+<div class="nav-btn" id="btn-prev">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M10 12L6 8L10 4" stroke="white" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<div class="dots" id="dots"></div>
+<div class="nav-btn" id="btn-next">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M6 4L10 8L6 12" stroke="white" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+</div>
+</div>
+<!-- MOBILE SLIDER -->
+<div class="mobile-slider" id="m-wrap">
+<div class="mobile-track-wrap">
+<div class="mobile-track" id="m-track">
+<div class="mobile-card">
+<img alt="پروژه ۱" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="mobile-caption">
+<h3><span data-i18n="marinator-manufacturer"></span><br/><span data-i18n="vacuum-65l"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="mobile-card">
+<img alt="پروژه ۱" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="mobile-caption">
+<h3><span data-i18n="marinator-manufacturer"></span><br/><span data-i18n="vacuum-65l"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+<div class="mobile-card">
+<img alt="پروژه ۱" src="./img/swiper/pexels-pixabay-41953.jpg"/>
+<div class="mobile-caption">
+<h3><span data-i18n="marinator-manufacturer"></span><br/><span data-i18n="vacuum-65l"></span></h3>
+<a href="#"><span data-i18n="view-details"></span><svg fill="none" height="13" viewbox="0 0 14 14" width="13"><path d="M10 7H4M4 7L7 4M4 7L7 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.4"></path></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-nav">
+<div class="mobile-nav-btn" id="m-prev">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M10 12L6 8L10 4" stroke="white" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<div class="mobile-dots" id="m-dots"></div>
+<div class="mobile-nav-btn" id="m-next">
+<svg fill="none" height="16" viewbox="0 0 16 16" width="16"><path d="M6 4L10 8L6 12" stroke="white" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+</div>
+</div>
+</div>
+<div class="cooperation_pattern">
+<img alt="" src="./img/cooperation/pattern.png"/>
+</div>
+</section>
+<!-- end swiper -->
+<!-- about us -->
+<section class="aboutus">
+<div class="amin_logo reveal from-left">
+<img alt="" class="w-1/2 h-full object-scale-down" src="./img/about_us/AMINCO.png"/>
+</div>
+<div class="aboutus_more">
+<div class="aboutus_video_wraper reveal from-left">
+<video autoplay="" class="about_us_video" loop="" muted="" playsinline="" src="./img/about_us/video/kitchen-gif.mp4"></video>
+</div>
+<div class="aboutus_txt">
+<div class="texts reveal from-right">
+<div class="txt">
+<h3 data-i18n="about-us">درباره ما</h3>
+</div>
+<div class="txt_bold">
+<h3 data-i18n="learn-more">!بیشتر بدانید</h3>
+</div>
+</div>
+<div class="txt_dec no-scrollbar reveal from-bottom" data-i18n="about-description">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای 
+            </div>
+<div class="social_pages">
+<a class="curcle_social_page reveal from-bottom" href="#">
+<img alt="" class="icn" src="./img/about_us/pges_svg/Shape.png"/>
+</a>
+<a class="curcle_social_page_in reveal from-top" href="#">
+<img alt="" class="icn" src="./img/about_us/pges_svg/linkedin-fill-svgrepo-com 1.png"/>
+</a>
+<a class="curcle_social_page reveal from-bottom" href="#">
+<img alt="" class="icn" src="./img/about_us/pges_svg/Vector (6).png"/>
+</a>
+<a class="curcle_social_page reveal from-left" href="#">
+<img alt="" class="icn" src="./img/about_us/pges_svg/Vector (7).png"/>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- end about us -->
+<!-- cooperation -->
+<section class="cooperation reveal from-bottom">
+<div class="cooperation_txts">
+<div class="cooperation_header reveal from-left">
+<h3>We are proud to cooperate with</h3>
+</div>
+<div class="cooperation_header_bold reveal from-right">
+<h3>Trusted partners across Iran</h3>
+</div>
+<div class="cooperation_dec reveal from-bottom">
+<p>Leading companies that trust Amin Co for their kitchen equipment needs.</p>
+</div>
+</div>
+<div class="companys">
+<div class="company_section reveal from-right">
+<div class="ticker overflow-hidden w-full">
+<div class="tickerInner" id="tickerInner">
+<div class="tickerSet" id="tickerSet">
+<div class="company_style group">
+<img alt="" class="w-full h-[70%] object-scale-down" src="./img/logotest/KFC_logo.svg.png"/>
+<p class="z-10">Tehran Steel Industries Co.</p>
+</div>
+<div class="company_style group">
+<img alt="" class="w-full h-[70%] object-scale-down" src="./img/logotest/KFC_logo.svg.png"/>
+<p class="z-10">Tehran Steel Industries Co.</p>
+</div>
+<div class="company_style group">
+<img alt="" class="w-full h-[70%] object-scale-down" src="./img/logotest/KFC_logo.svg.png"/>
+<p class="z-10">Tehran Steel Industries Co.</p>
+</div>
+<div class="company_style group">
+<img alt="" class="w-full h-[70%] object-scale-down" src="./img/logotest/KFC_logo.svg.png"/>
+<p class="z-10">Tehran Steel Industries Co.</p>
+</div>
+<div class="company_style group">
+<img alt="" class="w-full h-[70%] object-scale-down" src="./img/logotest/KFC_logo.svg.png"/>
+<p class="z-10">Tehran Steel Industries Co.</p>
+</div>
+<div class="company_style group">
+<img alt="" class="w-full h-[70%] object-scale-down" src="./img/logotest/KFC_logo.svg.png"/>
+<p class="z-10">Tehran Steel Industries Co.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cooperation_pattern">
+<img alt="" src="./img/cooperation/pattern.png"/>
+</div>
+<div class="cooperation_flash">
+<img alt="" src="./img/cooperation/Flash.png"/>
+</div>
+</section>
+<!-- end cooperation -->
+<!-- Counseling -->
+<section class="counsel">
+<div class="counsel_box reveal from-right">
+<div class="counsel_box_wraper">
+<div class="counsoel_dec reveal from-bottom">
+<p data-i18n="experts-help">نیروهای متخصص ما راهنمای شما در توسعه کسب و کارتان خواهند بود</p>
+</div>
+<div class="counsel_txt_wraper reveal from-top">
+<div class="counsel_txt">
+<p data-i18n="need">نیاز به</p>
+</div>
+<div class="counsel_txt_bold">
+<p data-i18n="consultation-question">مشاوره دارید؟</p>
+</div>
+</div>
+<div class="counsel_pattern xl:w-[441px] w-[150px] xl:h-[455px] h-[160px] absolute z-10 left-0">
+<img alt="" class="object-scale-down" src="./img/counsel/pattern.png"/>
+</div>
+</div>
+</div>
+<div class="counsel_link_wraper reveal from-left">
+<a class="counsel_link" href="#">
+<div class="counsel_curcle">
+<img alt="" src="./img/slider/svg/direction.png"/>
+</div>
+<div class="counsel_link_txt">
+<p data-i18n="contact-us-action">با ما تماس بگیرید</p>
+</div>
+</a>
+</div>
+</section>
+<!-- end Counseling -->
+<!-- news -->
+<section class="news">
+<div class="news_txt reveal from-top">
+<div class="news_header">
+<h3 data-i18n="latest-news">آخرین اخبار و مقالات</h3>
+</div>
+<div class="news_dec_header_wraper">
+<p class="max-w-125" data-i18n="short-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+</div>
+</div>
+<div class="news_box_wraper">
+<div class="news_box group reveal from-left">
+<div class="news_img_wraper">
+<img alt="" class="news_img" src="./img/slider/be401fe22be8e7c8de1fd25af44a40083a5fd4db.jpg"/>
+<div class="hover_news_img"></div>
+<div class="news_btn_hover_wraper">
+<a class="news_btn_hover">
+<span>←</span><span data-i18n="read-article"></span></a>
+</div>
+</div>
+<div class="news_dec">
+<div class="news_dec_header">
+<h3 data-i18n="article-title">لورم ایپسوم متن ساختگی با </h3>
+</div>
+<div class="news_dec_txt no-scrollbar">
+<p data-i18n="article-description">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
+                </p>
+</div>
+<div class="person_hour">
+<div class="hour" dir="rtl">
+<img alt="" class="w-4.25 h-4.25" src="./img/news/svgs/Time.png"/>
+<p data-i18n="seven-hours-ago">۷ ساعت پیش</p>
+</div>
+<div class="person" dir="rtl">
+<img alt="" class="w-4.25 h-4.25 object-scale-down" src="./img/news/svgs/Mail.png"/>
+<p data-i18n="author-name">نام نویسنده</p>
+</div>
+</div>
+</div>
+</div>
+<div class="news_box group reveal from-bottom">
+<div class="news_img_wraper">
+<img alt="" class="news_img" src="./img/slider/be401fe22be8e7c8de1fd25af44a40083a5fd4db.jpg"/>
+<div class="hover_news_img"></div>
+<div class="news_btn_hover_wraper">
+<a class="news_btn_hover">
+<span>←</span><span data-i18n="read-article"></span></a>
+</div>
+</div>
+<div class="news_dec">
+<div class="news_dec_header">
+<h3 data-i18n="article-title">لورم ایپسوم متن ساختگی با </h3>
+</div>
+<div class="news_dec_txt no-scrollbar">
+<p data-i18n="article-description">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
+                </p>
+</div>
+<div class="person_hour">
+<div class="hour" dir="rtl">
+<img alt="" class="w-4.25 h-4.25" src="./img/news/svgs/Time.png"/>
+<p data-i18n="seven-hours-ago">۷ ساعت پیش</p>
+</div>
+<div class="person" dir="rtl">
+<img alt="" class="w-4.25 h-4.25 object-scale-down" src="./img/news/svgs/Mail.png"/>
+<p data-i18n="author-name">نام نویسنده</p>
+</div>
+</div>
+</div>
+</div>
+<div class="news_box group reveal from-right">
+<div class="news_img_wraper">
+<img alt="" class="news_img" src="./img/slider/be401fe22be8e7c8de1fd25af44a40083a5fd4db.jpg"/>
+<div class="hover_news_img"></div>
+<div class="news_btn_hover_wraper">
+<a class="news_btn_hover">
+<span>←</span><span data-i18n="read-article"></span></a>
+</div>
+</div>
+<div class="news_dec">
+<div class="news_dec_header">
+<h3 data-i18n="article-title">لورم ایپسوم متن ساختگی با </h3>
+</div>
+<div class="news_dec_txt no-scrollbar">
+<p data-i18n="article-description">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که 
+                </p>
+</div>
+<div class="person_hour">
+<div class="hour" dir="rtl">
+<img alt="" class="w-4.25 h-4.25" src="./img/news/svgs/Time.png"/>
+<p data-i18n="seven-hours-ago">۷ ساعت پیش</p>
+</div>
+<div class="person" dir="rtl">
+<img alt="" class="w-4.25 h-4.25 object-scale-down" src="./img/news/svgs/Mail.png"/>
+<p data-i18n="author-name">نام نویسنده</p>
+</div>
+</div>
+</div>
+</div>
+<a class="show_all_wraper reveal from-right" href="#">
+<img alt="" class="w-5 h-3.5" src="./img/news/svgs/Vector 2343.png"/>
+<p data-i18n="view-all">مشاهده همه</p>
+</a>
+</div>
+</section>
+<!-- end news -->
+<!-- contact us -->
+<section class="contact_us">
+<div class="cooperation_txts reveal from-top">
+<div class="cooperation_header">
+<h3 data-i18n="free-consultation-heading">برای مشاوره رایگان</h3>
+</div>
+<div class="cooperation_header_bold">
+<h3 data-i18n="get-in-touch">با ما در  ارتبـــــــــاط باشید</h3>
+</div>
+<div class="cooperation_dec reveal from-bottom">
+<p data-i18n="short-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+</div>
+</div>
+<form action="" class="contact_us_form reveal from-bottom" method="post">
+<label class="contact_us_lable reveal from-top" data-i18n="full-name" for="FullName">نام و نام خانوادگی</label>
+<input id="FullName" name="fullName" autocomplete="name" class="contact_us_input reveal from-top" data-i18n-placeholder="name-placeholder" placeholder="فرزاد هاشمی" type="text"/>
+<label class="contact_us_lable reveal from-top" data-i18n="phone-number" for="PhoneNumber">شماره تماس</label>
+<input id="PhoneNumber" name="phoneNumber" autocomplete="tel" inputmode="tel" class="contact_us_input reveal from-top" data-i18n-placeholder="phone-placeholder" placeholder="0913*******" type="text"/>
+<label class="contact_us_lable reveal from-top" data-i18n="description" for="Description">توضیحات</label>
+<textarea class="contact_us_input_dec reveal from-top" id="Description" name="description"></textarea>
+<div class="contact_privacy w-full h-[60px] text-white flex justify-end items-center gap-2 xl:text-[14px] font-normal text-[12px] text-right">
+<label class="reveal from-bottom" data-i18n="privacy-agreement" for="PrivacyAgreement">شما با سیاست حفظ حریم خصوصی دوستانه ما موافقت می‌کنید</label>
+<input id="PrivacyAgreement" name="privacyAgreement" class="size-4" type="checkbox"/>
+</div>
+<button class="contact_us_form_btn reveal from-bottom" data-i18n="send-message" type="submit">ارسال پیام</button>
+</form>
+<div class="top_pattern">
+<img alt="" src="./img/contact_us/pattern/paatterntop.png"/>
+</div>
+<div class="bottom_pattern">
+<img alt="" src="./img/contact_us/pattern/patternbottom.png"/>
+</div>
+<div class="flash_pattern">
+<img alt="" src="./img/contact_us/flash.png"/>
+</div>
+</section>
+<!-- end contact us -->
+<!-- baner -->
+<section class="baner_wraper">
+<div class="baner reveal from-top">
+<div class="scrool">
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+<p>Amin Co</p>
+</div>
+</div>
+<div class="baner_rotate reveal from-bottom"></div>
+</section>
+<!-- end baner -->
+<!-- footer -->
+<footer class="footer_wraper reveal from-bottom">
+<div class="footer_items">
+<div class="footer_curcle_wraper reveal from-left">
+<div class="footer_curcle">
+<div class="footer_flash">
+<img alt="" src="./img/footer/Arrow.png"/>
+</div>
+<div class="text_curcle">
+<img alt="" src="./img/footer/Group 2085663503 (1).png"/>
+</div>
+</div>
+</div>
+<div class="footer_header reveal from-right">
+<h3 data-i18n="com"></h3>
+</div>
+<div class="footer_dec reveal from-right">
+<p data-i18n="f-dec"></p>
+</div>
+<div class="footer_links reveal from-left">
+<a class="footer_last_link" data-i18n="home" href="#">صفحه اصلی</a>
+<a class="footer_link" data-i18n="home" href="#">صفحه اصلی</a>
+<a class="footer_link" data-i18n="home" href="#">صفحه اصلی</a>
+<a class="footer_first_link" data-i18n="home" href="#">صفحه اصلی</a>
+</div>
+<div class="footer_txt reveal from-bottom">
+<p data-i18n="copyright">.کلیــه حقـوق مادی و معنـوی متعلق به شرکت امین می باشد</p>
+</div>
+</div>
+</footer>
+<!-- end footer  -->
+</main>
+<!-- scripts -->
+<script src="./js/services-accordion.js"></script>
+<script src="./js/count.js"></script>
+<script src="./js/animate.js"></script>
+<script src="./js/headeranimate.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./i18next/dist/umd/i18next.js"></script>
+<script src="./js/language.js"></script>
+<script src="./js/languagebtn.js"></script>
+<script src="./js/track.js"></script>
+<!-- end scripts -->
+</body>
+</html>
