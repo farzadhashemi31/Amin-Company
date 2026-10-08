@@ -593,7 +593,7 @@
     border-radius: 50px;
     border-bottom-right-radius: var(--radius-4xl);
     border-bottom-left-radius: var(--radius-4xl);
-    background-image: url(../assets/headerpattern-BWK1RQ98.png);
+    background-image: url(../img/header/headerpattern.png);
     background-size: cover;
     background-repeat: no-repeat;
   }
